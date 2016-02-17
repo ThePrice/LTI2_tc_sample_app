@@ -41,7 +41,7 @@ ActiveAdmin.register Lti2Tc::DeploymentRequest do
     column :reg_key
     column :reg_password
     column :status
-    default_actions
+    actions
   end
 
   form do |f|

@@ -30,7 +30,7 @@ ActiveAdmin.register Lti2Tc::Tool do
     column :description
     column :key
     column :secret
-    default_actions
+    actions
   end
 
 end

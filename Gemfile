@@ -13,7 +13,7 @@ gem 'sqlite3'
 # gem 'lti2', git: 'git@github.com:vitalsource/lti2-reference.git', branch: 'LTI2.1-splitsecret'
 gem 'lti2', path: '../LTI2-Reference'
 
-gem 'activeadmin', github: 'gregbell/active_admin', ref: '698f313'
+gem 'activeadmin', github: 'gregbell/active_admin'
 #Active admin dependencies
 gem 'ransack'
 gem 'inherited_resources'
