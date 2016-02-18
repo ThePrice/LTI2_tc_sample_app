@@ -413,6 +413,8 @@ lti2_tc_registries:
       : \"service_provider.description\"\n      },\n      \"support\" : {\n        \"email\"
       : \"support@yasp.{tool_consumer_name}.org\"\n      }\n    }\n  },\n  \"capability_offered\"
       : [\n     \"basic-lti-launch-request\",\n     \"Result.autocreate\",\n     \"Result.sourcedId\",\n\t
+      \"Context.id\",\n \"CourseSection.label\",\n \"CourseSection.title\",\n \"CourseOffering.label\",\n 
+      \"Result.uri\",\n 
       \"User.id\",\n\t \"User.username\",\n\t \"CourseSection.sourcedId\",\n\t \"Person.sourcedId\",\n\t
       \"Person.email.primary\",\n\t \"Person.name.given\",\n\t \"Person.name.family\",\n\t
       \"Person.name.full\",\n\t \"Membership.role\",\n\t \"ToolProxy.custom.url\",\n
@@ -442,7 +444,7 @@ lti2_tc_registries:
     - 2012-07-09 23:45:10.000000000 Z
   - - 3
     - tc_deployment_url
-    - http://rails.kinexis.com:4000
+    - http://localhost:4000
     - 2013-12-24 00:00:00.000000000 Z
     - 2012-07-29 17:58:18.000000000 Z
   - - 5

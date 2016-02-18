@@ -36,7 +36,8 @@ ActiveAdmin.register_page 'Course Page' do
       is_enabled = params['is_enabled'] == 'on'
       resource_id = params['resource_id']
       grade_item_id = params['grade_item_id'] unless params['grade_item_id'] == -1  # blank value
-      resource = Resource.find( resource_id )
+      # this resource doesn't seem to get used, and Resource is not defined, so commenting out for now
+      #resource = Resource.find( resource_id )
       custom_parameters = {}
       custom_param_string = params['custom_parameters']
       custom_param_string_array = custom_param_string.split(/\r?\n/)

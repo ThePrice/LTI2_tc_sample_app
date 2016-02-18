@@ -78,7 +78,7 @@
 %dev#new_link_section
   %h4 New Link Section
 
-  %form{:method => "post", :action => "/admin/course_page?method=newtool&course_id=#{@course.id}&"}
+  %form{:method => "get", :action => "/admin/course_page"}
     %fieldset
       %ol
         %li
@@ -118,5 +118,7 @@
             Create Link as Enabled
 
         %li
+          %input{:type => "hidden", :name => "method", :value => "newtool"}
+          %input{:type => "hidden", :name => "course_id", :value => "#{@course.id}"}
           %label
           %input{:type => "submit", :value => "Create Link"}
